@@ -29,12 +29,19 @@
             color: #666;
         }
     </style>
+    <script>
+        // Redirect non-www to www
+        if (window.location.hostname === 'aznudes.com') {
+            window.location.replace('https://www.' + window.location.hostname + window.location.pathname + window.location.search);
+        }
+    </script>
 </head>
 <body>
     <div class="container">
         <h1>Hello World</h1>
         <p>Welcome to aznudes.com</p>
-        <p>This site is running on DigitalOcean App Platform</p>
+        <p>This site is running on DigitalOcean App Platform with CDN</p>
+        <p>Non-www automatically redirects to www</p>
     </div>
 </body>
 </html>
