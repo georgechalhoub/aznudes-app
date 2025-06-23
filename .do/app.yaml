@@ -1,6 +1,15 @@
 name: aznudes-app
+domains:
+- domain: www.aznudes.com
+  type: PRIMARY
+- domain: aznudes.com
+  type: ALIAS
 static_sites:
 - name: frontend
+  github:
+    repo: georgechalhoub/aznudes-app
+    branch: main
+    deploy_on_push: true
   source_dir: /
   index_document: index.html
   routes:

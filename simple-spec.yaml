@@ -1,0 +1,10 @@
+name: aznudes-app
+region: nyc1
+static_sites:
+- name: frontend
+  build_command: echo "Building static site"
+  output_dir: /
+  index_document: index.html
+  source_dir: /
+  routes:
+  - path: /
